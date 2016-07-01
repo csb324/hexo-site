@@ -44,7 +44,7 @@
     {% include '../components/hero.swig' with {title: page.title, subtitle: page.headline} %}
   {% endblock %}
 
-  <div class="page__body container">
+  <div class="page__body">
     {% block body %}{% endblock %}
   </div>
 

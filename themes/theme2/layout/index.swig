@@ -7,6 +7,12 @@
 
 
 {% block body %}
-  {% include 'includes/recent-posts.swig' %}
-  {% include 'includes/pagination.swig' %}
+	<div class="container">
+
+	  {% include 'includes/recent-posts.swig' %}
+	  <img src="/images/flowers.jpg" alt="flowers">
+	  {% include 'includes/pagination.swig' %}
+
+	</div>
+
 {% endblock %}

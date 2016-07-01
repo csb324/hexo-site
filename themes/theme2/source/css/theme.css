@@ -520,4 +520,10 @@ a {
   -ms-flex: 1;
   flex: 1; }
 
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 900px;
+  width: 100%; }
+
 /*# sourceMappingURL=theme.css.map */
