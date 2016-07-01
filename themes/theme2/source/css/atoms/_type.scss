@@ -11,15 +11,39 @@ $headerFont: 'Libre Baskerville', Georgia, serif;
 }
 
 
-
-
 // implementation
 
 body {
 	font-family: $bodyFont;
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+}
+
+$typeRatio: 1.414;
+$typeRatioEm: $typeRatio * 1em;
+
+$font-size-h1: $typeRatioEm * $typeRatio * $typeRatio * $typeRatio;
+$font-size-h2: $typeRatioEm * $typeRatio * $typeRatio;
+$font-size-h3: $typeRatioEm * $typeRatio;
+$font-size-h4: $typeRatioEm;
+
+p {margin-bottom: $typeRatioEm;}
+
+h1, h2, h3, h4 {
+  margin: $typeRatioEm 0 0.5em;
+  font-weight: inherit;
+  line-height: $typeRatio;
 }
 
 h1 {
+  margin-top: 0;
+  font-size: $font-size-h1;
 	@extend %headerFont;
+
 }
 
+h2 {font-size: $font-size-h2;}
+
+h3 {font-size: $font-size-h3;}
+
+h4 {font-size: $font-size-h4;}

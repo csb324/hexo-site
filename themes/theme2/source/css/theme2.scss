@@ -1,10 +1,7 @@
+@import "reset/normalize";
+@import "reset/reset";
+
 @import "atoms/colors";
 @import "atoms/type";
 
-body {
-	font-family: $bodyFont;
-}
-
-h1 {
-	@extend %headerFont;
-}
+@import "molecules/nav";
