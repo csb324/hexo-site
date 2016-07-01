@@ -1,3 +1,10 @@
+@import "atoms/colors";
+@import "atoms/type";
+
 body {
-	font-family: sans-serif;
+	font-family: $bodyFont;
+}
+
+h1 {
+	@extend %headerFont;
 }

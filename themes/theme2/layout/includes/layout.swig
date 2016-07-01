@@ -37,13 +37,7 @@
 </head>
 <body>
 
-<div id="menu-outer">
-  <div id="menu-inner">
-    {% for key in Object.keys(theme.menu) %}
-      <a href="{{ theme.menu[key] }}">{{ key }}</a>
-    {% endfor %}
-  </div>
-</div>
+{% include '../components/nav.swig' %}
 
 <div id="content-outer">
   <div id="content-inner">

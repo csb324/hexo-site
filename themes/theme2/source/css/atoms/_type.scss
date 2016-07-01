@@ -1,0 +1,25 @@
+@import 'https://fonts.googleapis.com/css?family=Fira+Mono|Libre+Baskerville:400i|Open+Sans:400,400i';
+
+$bodyFont: 'Open Sans', Helvetica, Arial, sans-serif;
+$monoFont: 'Fira Mono', monospace;
+$headerFont: 'Libre Baskerville', Georgia, serif;
+
+%headerFont {
+	font-family: $headerFont;
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+
+
+// implementation
+
+body {
+	font-family: $bodyFont;
+}
+
+h1 {
+	@extend %headerFont;
+}
+

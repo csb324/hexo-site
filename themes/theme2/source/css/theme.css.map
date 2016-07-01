@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,IAAK;EACJ,WAAW,EAAE,UAAU",
-"sources": ["theme2.scss"],
+"mappings": "AAAQ,qGAA6F;AAMrG,EAAY;EACX,WAAW,EAHC,mCAAmC;EAI/C,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;;AAQpB,IAAK;EACJ,WAAW,EAhBD,yCAAyC;;ACCpD,IAAK;EACJ,WAAW,EDFD,yCAAyC",
+"sources": ["atoms/_type.scss","theme2.scss"],
 "names": [],
 "file": "theme.css"
 }
