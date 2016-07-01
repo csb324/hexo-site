@@ -37,10 +37,10 @@
 </head>
 <body>
 
-<div class="page">
-  {% include '../components/nav.swig' %}
-  {% block header %}
+<div class="page">  
+  {% block header %}    
     {# By default, include the hero (regular size) with page title and headline #}
+    {% include '../components/nav.swig' with {showTitle: true} %}
     {% include '../components/hero.swig' with {title: page.title, subtitle: page.headline} %}
   {% endblock %}
 

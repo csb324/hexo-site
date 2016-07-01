@@ -2,7 +2,8 @@
 	background-color: $darkgray;
 	text-align: center;
 	color: #fff;
-	padding: 15px;
+	padding: 40px 15px;
+
 
 	@include flexbox();
 	@include flex-direction(column);

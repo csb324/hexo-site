@@ -1,4 +1,8 @@
 <div class="nav">
+	{% if showTitle %}
+		<p class="nav__title">Clara Beyer</p>
+	{% endif %}
+
 	<ul class="nav__items">
 		{% set thisPage = page.path | replace('index.html','') | replace('/','') %}
 

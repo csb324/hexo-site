@@ -4,7 +4,7 @@
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import "https://fonts.googleapis.com/css?family=Fira+Mono|Libre+Baskerville:400i|Open+Sans:400,400i|Playfair+Display";
+@import "https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans:400,400i,600,600i|Playfair+Display";
 html {
   font-family: sans-serif;
   /* 1 */
@@ -381,7 +381,7 @@ p {
   margin-bottom: 1.414em; }
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
+  margin: 1.2em 0 0.5em;
   font-weight: inherit;
   line-height: 1.414; }
 
@@ -403,29 +403,66 @@ h3 {
 h4 {
   font-size: 1.414em; }
 
+a {
+  color: #355691;
+  font-weight: 600; }
+
+:visited {
+  color: #565264; }
+
 .nav {
   font-family: "Fira Mono", monospace;
   text-transform: lowercase;
-  background-color: #262626; }
+  background-color: #1e1e1e;
+  padding: 5px 5px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+
+.nav__title {
+  color: #BBFF8B;
+  margin: 0; }
 
 .nav__items {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: right; }
 
 .nav__item {
   display: inline-block; }
 
-.nav__link {
-  display: inline-block;
+.nav__link, .nav__title {
   padding: 4px;
-  color: #FFBCDD; }
+  display: inline-block;
+  border-bottom: 2px solid transparent; }
+
+.nav__link {
+  color: #FFBCDD;
+  font-weight: 400; }
+
+.nav__link--active {
+  color: #fff;
+  border-bottom: 2px solid #fff; }
 
 .hero {
   background-color: #262626;
   text-align: center;
   color: #fff;
-  padding: 15px;
+  padding: 40px 15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;

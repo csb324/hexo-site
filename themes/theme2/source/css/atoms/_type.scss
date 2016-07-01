@@ -1,10 +1,8 @@
-@import 'https://fonts.googleapis.com/css?family=Fira+Mono|Libre+Baskerville:400i|Open+Sans:400,400i|Playfair+Display';
+@import 'https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans:400,400i,600,600i|Playfair+Display';
 
 $bodyFont: 'Open Sans', Helvetica, Arial, sans-serif;
 $monoFont: 'Fira Mono', monospace;
 $headerFont: 'Playfair Display', Georgia, serif;
-
-
 
 // implementation
 
@@ -25,7 +23,7 @@ $font-size-h4: $typeRatioEm;
 p {margin-bottom: $typeRatioEm;}
 
 h1, h2, h3, h4 {
-  margin: $typeRatioEm 0 0.5em;
+  margin: 1.2em 0 0.5em;
   font-weight: inherit;
   line-height: $typeRatio;
 }
@@ -41,9 +39,6 @@ h1 {
   font-size: $font-size-h1;
 	@extend %headerFont;
 }
-
 h2 {font-size: $font-size-h2;}
-
 h3 {font-size: $font-size-h3;}
-
 h4 {font-size: $font-size-h4;}
