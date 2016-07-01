@@ -10,7 +10,8 @@
 
 @import "molecules/nav";
 @import "molecules/hero";
-
+@import "molecules/status-bar";
+@import "molecules/post-preview";
 
 .page {
 	@include flexbox();

@@ -1,16 +1,11 @@
 .nav {
 	font-family: $monoFont;
 	text-transform: lowercase;
-	background-color: darken($darkgray, 3%);
+	background-color: $darkergray;
 	padding: 5px 5px 0;
 	@include flexbox();
 	@include justify-content(space-between);
 }
-
-	.nav__title {
-		color: $lightgreen;
-		margin: 0;
-	}
 
 	.nav__items {
 		padding: 0;
@@ -28,20 +23,17 @@
 		padding: 4px;
 		display: inline-block;
 		border-bottom: 2px solid transparent;
+		font-weight: 400;
 	}
 
+	.nav__title {
+		color: $lightgreen;
+	}
 	.nav__link {
 		color: $pink;
-		font-weight: 400;
 	}
 
 	.nav__link--active {
 		color: #fff;
 		border-bottom: 2px solid #fff;
-		// &:before {
-		// 	content: "[";
-		// }
-		// &:after {
-		// 	content: "]";
-		// }
 	}

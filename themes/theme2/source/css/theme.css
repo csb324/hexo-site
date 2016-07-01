@@ -375,7 +375,8 @@ a {
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 15px;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.414; }
 
 p {
   margin-bottom: 1.414em; }
@@ -426,10 +427,6 @@ a {
   -moz-justify-content: space-between;
   justify-content: space-between; }
 
-.nav__title {
-  color: #BBFF8B;
-  margin: 0; }
-
 .nav__items {
   padding: 0;
   margin: 0;
@@ -448,11 +445,14 @@ a {
 .nav__link, .nav__title {
   padding: 4px;
   display: inline-block;
-  border-bottom: 2px solid transparent; }
+  border-bottom: 2px solid transparent;
+  font-weight: 400; }
+
+.nav__title {
+  color: #BBFF8B; }
 
 .nav__link {
-  color: #FFBCDD;
-  font-weight: 400; }
+  color: #FFBCDD; }
 
 .nav__link--active {
   color: #fff;
@@ -497,6 +497,27 @@ a {
   color: #BBFF8B; }
   .hero--large .hero__subtitle {
     color: #fff; }
+
+.status-bar {
+  background-color: #1e1e1e;
+  color: #888399;
+  padding: 5px 0;
+  font-family: "Fira Mono", monospace; }
+
+.recent-posts {
+  background-color: #FFBCDD;
+  padding: 40px 0; }
+
+.post-preview {
+  margin-bottom: 1em;
+  border-radius: 2px; }
+
+.post-preview__title, .post-preview__subtitle {
+  margin: 0; }
+
+.post-preview__date {
+  font-family: "Fira Mono", monospace;
+  float: right; }
 
 .page {
   display: -webkit-box;

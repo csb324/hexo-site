@@ -1,0 +1,19 @@
+.recent-posts {
+	background-color: $pink;
+	padding: 40px 0;
+}
+
+
+.post-preview {
+	margin-bottom: 1em;
+	border-radius: 2px;
+}
+
+	.post-preview__title, .post-preview__subtitle {
+		margin: 0;
+	}
+
+	.post-preview__date {
+		font-family: $monoFont;
+		float: right;
+	}

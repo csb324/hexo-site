@@ -1,6 +1,6 @@
 <div class="nav">
 	{% if showTitle %}
-		<p class="nav__title">Clara Beyer</p>
+		<a href="/" class="nav__title">Clara Beyer</a>
 	{% endif %}
 
 	<ul class="nav__items">

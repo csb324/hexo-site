@@ -41,7 +41,7 @@
   {% block header %}    
     {# By default, include the hero (regular size) with page title and headline #}
     {% include '../components/nav.swig' with {showTitle: true} %}
-    {% include '../components/hero.swig' with {title: page.title, subtitle: page.headline} %}
+    {% include '../components/hero.swig' with {title: page.title, subtitle: page.headline} %}    
   {% endblock %}
 
   <div class="page__body">
