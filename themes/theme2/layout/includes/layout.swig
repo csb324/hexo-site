@@ -37,23 +37,24 @@
 </head>
 <body>
 
-{% include '../components/nav.swig' %}
+<div class="page">
+  {% include '../components/nav.swig' %}
+  {% block header %}
+    {# By default, include the hero (regular size) with page title and headline #}
+    {% include '../components/hero.swig' with {title: page.title, subtitle: page.headline} %}
+  {% endblock %}
 
-<div id="content-outer">
-  <div id="content-inner">
-    {# {% autoescape false %}{{ body }}{% endautoescape %} #}
+  <div class="page__body container">
     {% block body %}{% endblock %}
   </div>
+
+
+  <div class="footer page__footer">
+    <p>copyright 2016.</p>
+  </div>
+
 </div>
 
-<div id="bottom-outer">
-  <div id="bottom-inner">
-    Site by {{ config.author }} using
-    <a href="http://hexo.io">hexo blog framework</a>.
-    <br>
-    <a href="{{ config.root }}">Home</a>
-  </div>
-</div>
 
 {% if theme.scripts !== undefined && theme.scripts.length > 0 %}
   {# scripts list from config.yml #}

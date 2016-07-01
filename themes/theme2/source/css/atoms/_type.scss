@@ -1,14 +1,9 @@
-@import 'https://fonts.googleapis.com/css?family=Fira+Mono|Libre+Baskerville:400i|Open+Sans:400,400i';
+@import 'https://fonts.googleapis.com/css?family=Fira+Mono|Libre+Baskerville:400i|Open+Sans:400,400i|Playfair+Display';
 
 $bodyFont: 'Open Sans', Helvetica, Arial, sans-serif;
 $monoFont: 'Fira Mono', monospace;
-$headerFont: 'Libre Baskerville', Georgia, serif;
+$headerFont: 'Playfair Display', Georgia, serif;
 
-%headerFont {
-	font-family: $headerFont;
-	font-style: italic;
-	font-weight: normal;
-}
 
 
 // implementation
@@ -35,11 +30,16 @@ h1, h2, h3, h4 {
   line-height: $typeRatio;
 }
 
+%headerFont {
+	font-family: $headerFont;
+	font-weight: normal;
+	text-transform: lowercase;
+}
+
 h1 {
   margin-top: 0;
   font-size: $font-size-h1;
 	@extend %headerFont;
-
 }
 
 h2 {font-size: $font-size-h2;}

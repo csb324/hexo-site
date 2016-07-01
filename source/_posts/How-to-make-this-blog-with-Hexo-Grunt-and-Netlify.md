@@ -1,5 +1,6 @@
 ---
-title: 'How to make this blog (with Hexo, Grunt, and Netlify)'
+title: 'How to make this blog'
+headline:  (with Hexo, Grunt, and Netlify)
 date: 2016-06-30 21:21:41
 tags: tech
 ---

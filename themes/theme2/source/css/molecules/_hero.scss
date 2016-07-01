@@ -1,0 +1,34 @@
+.hero {
+	background-color: $darkgray;
+	text-align: center;
+	color: #fff;
+	padding: 15px;
+
+	@include flexbox();
+	@include flex-direction(column);
+	@include justify-content(center);
+}
+
+	.hero--large {
+		height: 40vh;
+		min-height: 12em;
+	}
+
+	.hero__title {
+		margin-bottom: 0;
+		.hero--large & {
+			color: $lightgreen;
+		}
+	}
+
+	.hero__subtitle {
+		margin-top: 0;
+		font-size: $font-size-h4;
+		font-family: $monoFont;
+		text-transform: lowercase;
+		color: $lightgreen;
+
+		.hero--large & {
+			color: #fff;
+		}
+	}
