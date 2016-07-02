@@ -1,3 +1,11 @@
 a {
 	text-decoration: none;
 }
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both;
+}

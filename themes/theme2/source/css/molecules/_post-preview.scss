@@ -1,8 +1,21 @@
 .recent-posts {
-	background-color: $pink;
+	background-color: $darkblue;
 	padding: 40px 0;
+	border-top: 1px solid $darkergray;
 }
 
+.about-image {
+	max-width: 80%;
+	border: 10px solid #fff;
+	border-radius: 2px;
+	border-bottom: 50px solid #fff;
+
+	transform: rotate(-3deg);
+}
+
+.switzerland {
+	max-width: 50%;
+}
 
 .post-preview {
 	margin-bottom: 1em;
@@ -11,9 +24,19 @@
 
 	.post-preview__title, .post-preview__subtitle {
 		margin: 0;
+		color: #fff;
+	}
+	.post-preview__link {
+		color: #fff;
+		&:hover {
+			color: $purple;
+		}
 	}
 
 	.post-preview__date {
 		font-family: $monoFont;
 		float: right;
+		color: $pink;
+		margin-top: 5px;
 	}
+

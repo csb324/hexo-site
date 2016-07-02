@@ -28,3 +28,15 @@
 	max-width: 900px;
 	width: 100%;
 }
+
+.columns {
+	@include flexbox();
+	@include flex-wrap(wrap);
+}
+	.column {
+		@include flex(1 0 200px);		
+		padding: 0 15px;
+	}
+	.column-2 {		
+		@include flex-grow(2);
+	}
