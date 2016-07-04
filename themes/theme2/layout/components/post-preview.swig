@@ -12,6 +12,9 @@
 
   <h3 class="post-preview__title">
   	<a class="post-preview__link" href="{{ href }}">
+    {% if  preIcon %}
+      <i class="fa fa-{{preIcon}} post-preview__icon"></i>
+    {% endif %}    
   	{{ item.title || '(No Title)' }}
 	  </a>
   </h3>

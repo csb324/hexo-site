@@ -6,11 +6,10 @@
 {% endblock %}
 
 
+
+
 {% block body %}
-  {% include 'includes/recent-posts.swig' %}
-	
-	<div class="container">
-	  {% include 'includes/pagination.swig' %}
-	</div>
+
+  {% include 'includes/recent-posts.swig' %}	
 
 {% endblock %}

@@ -4,13 +4,16 @@
 	border-top: 1px solid $darkergray;
 }
 
+.recent-posts__headline {
+	font-family: $monoFont;
+	margin-top: 0;
+	color: $pink;
+	text-transform: lowercase;
+	border-bottom: 2px solid $pink;
+}
+
 .about-image {
 	max-width: 80%;
-	border: 10px solid #fff;
-	border-radius: 2px;
-	border-bottom: 50px solid #fff;
-
-	transform: rotate(-3deg);
 }
 
 .switzerland {
@@ -22,21 +25,37 @@
 	border-radius: 2px;
 }
 
+	.post-preview__title {
+		font-family: $headerFont;
+		text-transform: lowercase;
+	}
+
+	.post-preview__subtitle {
+		font-family: $monoFont;
+	}
+
 	.post-preview__title, .post-preview__subtitle {
 		margin: 0;
-		color: #fff;
-	}
-	.post-preview__link {
-		color: #fff;
-		&:hover {
-			color: $purple;
-		}
 	}
 
 	.post-preview__date {
 		font-family: $monoFont;
 		float: right;
-		color: $pink;
 		margin-top: 5px;
+		color: $darkblue;
 	}
+
+	.recent-posts {
+		.post-preview__title, .post-preview__subtitle, .post-preview__link {
+			color: #fff;
+		}
+		.post-preview__link:hover {
+			color: $purple;
+		}
+		.post-preview__date {
+			color: $purple;
+		}
+	}
+
+
 

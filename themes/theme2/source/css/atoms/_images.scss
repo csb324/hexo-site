@@ -1,0 +1,51 @@
+.polaroid-image {
+	border: 10px solid #fff;
+	border-radius: 2px;
+	border-bottom: 50px solid #fff;
+
+	transform: rotate(-3deg);
+	transition: 0.1s;
+	&:hover {
+		transform: rotate(0deg);
+	}
+}
+
+.desktop-image {
+	border: 25px solid #111;
+	max-width: 550px;
+	border-radius: 15px;
+	box-shadow: 0 0 0 3px #ccc, 0 30px 0 3px #ccc;
+	display: block;
+	margin: 20px auto 10%;
+	position: relative;
+
+	img {
+		margin-bottom: -5px;
+		max-width: 100%;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 20%;
+		width: 20%;
+		top: calc(100% + 30px);
+		left: 50%;
+		transform: translateX(-50%);
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#959595+0,dddddd+71,919191+100 */
+		background: #959595; /* Old browsers */
+		background: -moz-linear-gradient(top, #999999 0%, #dddddd 80%, #919191 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #999999 0%,#dddddd 80%,#919191 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #999999 0%,#dddddd 80%,#919191 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#919191',GradientType=0 ); /* IE6-9 */
+
+		z-index: -1;
+
+		border-color: #fff #fff #999 #fff;
+		border-style: solid;
+		border-width: 0 60px 6px;
+		border-radius: 60px;
+	}
+}
