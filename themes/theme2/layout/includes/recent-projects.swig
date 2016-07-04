@@ -1,5 +1,5 @@
 
-<div class="recent-posts">
+<div class="recent-projects section">
 	<div class="container columns">
 
 		<div class="column column-1">
@@ -7,7 +7,7 @@
 		</div>
 
 		<div class="column column-2">
-			<h2 class="recent-posts__headline">Recent Projects</h2>
+			<h2 class="section__headline">Recent Projects</h2>
 			{% include "tagged-posts.swig" with {targetTag: "projects", preIcon: "code"} %}
 		</div>
 

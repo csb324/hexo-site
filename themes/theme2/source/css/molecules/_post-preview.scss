@@ -1,16 +1,37 @@
-.recent-posts {
-	background-color: $darkblue;
+.section {
 	padding: 40px 0;
+}
+	.section__headline {
+		font-family: $monoFont;
+		margin-top: 0;
+		text-transform: lowercase;
+		border-bottom: 2px solid transparent;
+	}
+
+
+.recent-projects {
+	background-color: $darkergray;
 	border-top: 1px solid $darkergray;
+
+	.section__headline {
+		color: $pink;
+		border-color: $pink;
+	}
+
+
+	.read-more__link {
+		color: $pink;
+		border-color: $pink;
+		&:hover {
+			background-color: $pink;
+			color: $darkergray;
+		}
+	}
 }
 
-.recent-posts__headline {
-	font-family: $monoFont;
-	margin-top: 0;
-	color: $pink;
-	text-transform: lowercase;
-	border-bottom: 2px solid $pink;
-}
+
+
+
 
 .about-image {
 	max-width: 80%;
@@ -45,7 +66,7 @@
 		color: $darkblue;
 	}
 
-	.recent-posts {
+	.recent-projects {
 		.post-preview__title, .post-preview__subtitle, .post-preview__link {
 			color: #fff;
 		}

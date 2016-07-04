@@ -10,6 +10,8 @@
 
 {% block body %}
 
-  {% include 'includes/recent-posts.swig' %}	
+  {% include 'includes/recent-projects.swig' %}	
+
+  {% include 'includes/blog-posts.swig' %}
 
 {% endblock %}

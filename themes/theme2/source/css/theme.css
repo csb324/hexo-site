@@ -414,6 +414,15 @@ a {
   color: #39558C;
   font-weight: 600; }
 
+.read-more__link {
+  font-family: "Fira Mono", monospace;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-radius: 1px;
+  text-transform: lowercase;
+  border-color: #39558C; }
+
 .polaroid-image {
   border: 10px solid #fff;
   border-radius: 2px;
@@ -553,17 +562,27 @@ a {
   padding: 5px 0;
   font-family: "Fira Mono", monospace; }
 
-.recent-posts {
-  background-color: #39558C;
-  padding: 40px 0;
-  border-top: 1px solid #323848; }
+.section {
+  padding: 40px 0; }
 
-.recent-posts__headline {
+.section__headline {
   font-family: "Fira Mono", monospace;
   margin-top: 0;
-  color: #FFBCDD;
   text-transform: lowercase;
-  border-bottom: 2px solid #FFBCDD; }
+  border-bottom: 2px solid transparent; }
+
+.recent-projects {
+  background-color: #323848;
+  border-top: 1px solid #323848; }
+  .recent-projects .section__headline {
+    color: #FFBCDD;
+    border-color: #FFBCDD; }
+  .recent-projects .read-more__link {
+    color: #FFBCDD;
+    border-color: #FFBCDD; }
+    .recent-projects .read-more__link:hover {
+      background-color: #FFBCDD;
+      color: #323848; }
 
 .about-image {
   max-width: 80%; }
@@ -591,11 +610,11 @@ a {
   margin-top: 5px;
   color: #39558C; }
 
-.recent-posts .post-preview__title, .recent-posts .post-preview__subtitle, .recent-posts .post-preview__link {
+.recent-projects .post-preview__title, .recent-projects .post-preview__subtitle, .recent-projects .post-preview__link {
   color: #fff; }
-.recent-posts .post-preview__link:hover {
+.recent-projects .post-preview__link:hover {
   color: #DDDBF1; }
-.recent-posts .post-preview__date {
+.recent-projects .post-preview__date {
   color: #DDDBF1; }
 
 .page {

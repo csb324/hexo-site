@@ -13,10 +13,10 @@
 
 	{% if toDisplay %}
     {% include '../components/post-preview.swig' with {item: postItem} %}
-	{% endif %}
-	
+	{% endif %}	
 {% endfor %}
 
+
 <div class="read-more">
-	<a href="/tags/{{targetTag}}/" class="read-more__link"></a>
+	<a href="/tags/{{targetTag}}/" class="read-more__link">See More</a>
 </div>

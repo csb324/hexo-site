@@ -3,7 +3,6 @@
 {% block body %}
 	<div class="container">	
 	  <article id="page">
-	    <h1>{{ page.title }}</h1>
 	    {% autoescape false %}{{page.content }}{% endautoescape %}
 	  </article>
 

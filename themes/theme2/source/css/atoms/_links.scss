@@ -2,3 +2,15 @@ a {
 	color: $darkblue;
 	font-weight: 600;
 }
+
+
+.read-more__link {
+	font-family: $monoFont;
+	display: inline-block;
+	padding: 5px 10px;
+	border: 2px solid transparent;
+	border-radius: 1px;
+	text-transform: lowercase;
+	border-color: $darkblue;
+}
+
