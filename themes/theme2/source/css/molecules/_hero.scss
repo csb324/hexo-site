@@ -1,9 +1,7 @@
 .hero {
-	background-color: $darkgray;
 	text-align: center;
 	color: #fff;
 	padding: 40px 15px;
-
 
 	@include flexbox();
 	@include flex-direction(column);
@@ -16,18 +14,20 @@
 	}
 
 	.hero__title {
-		margin-bottom: 0;
 		.hero--large & {
 			color: $lightgreen;
 		}
 	}
 
+	.hero__title, .hero__subtitle {
+		margin: 0;
+	}
+
 	.hero__subtitle {
-		margin-top: 0;
+		color: $lightgreen;
 		font-size: $font-size-h4;
 		font-family: $monoFont;
 		text-transform: lowercase;
-		color: $lightgreen;
 
 		.hero--large & {
 			color: #fff;

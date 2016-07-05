@@ -1,38 +1,36 @@
 .nav {
+	padding: 5px 5px 0;
 	font-family: $monoFont;
 	text-transform: lowercase;
-	background-color: $darkergray;
-	padding: 5px 5px 0;
+	font-size: 1em;
+
 	@include flexbox();
 	@include justify-content(space-between);
 }
 
 	.nav__items {
+		@include flex(1);
 		padding: 0;
 		margin: 0;
 		list-style: none;
-		@include flex(1);
-		text-align: right;
+		text-align: right;				
 	}
 
 	.nav__item {
 		display: inline-block;
 	}
-
 	.nav__link, .nav__title {
 		padding: 4px;
 		display: inline-block;
 		border-bottom: 2px solid transparent;
 		font-weight: 400;
 	}
-
-	.nav__title {
-		color: $lightgreen;
-	}
 	.nav__link {
 		color: $pink;
 	}
-
+	.nav__title {
+		color: $lightgreen;
+	}
 	.nav__link--active {
 		color: #fff;
 		border-bottom: 2px solid #fff;

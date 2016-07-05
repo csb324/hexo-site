@@ -3,11 +3,8 @@
 
 @import "util/mixins";
 
+@import "atoms/layout";
 @import "atoms/colors";
-@import "atoms/type";
+@import "atoms/critical_type";
 
-@import "atoms/links";
-@import "atoms/images";
-
-@import "molecules/nav";
-@import "molecules/hero";
+@import "util/above_fold_basics";

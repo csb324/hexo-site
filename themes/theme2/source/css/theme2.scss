@@ -3,41 +3,18 @@
 
 @import "util/mixins";
 
+@import "atoms/layout";
+
 @import "atoms/colors";
 @import "atoms/type";
 
 @import "atoms/links";
 @import "atoms/images";
 
+@import "util/above_fold_basics";
+
 @import "molecules/nav";
 @import "molecules/hero";
+
 @import "molecules/status-bar";
 @import "molecules/post-preview";
-
-.page {
-	@include flexbox();
-	@include flex-direction(column);
-	min-height: 100vh;
-}
-	.page__body {
-		@include flex(1);
-	}
-
-.container {
-	margin: 0 auto;
-	padding: 0 15px;
-	max-width: 900px;
-	width: 100%;
-}
-
-.columns {
-	@include flexbox();
-	@include flex-wrap(wrap);
-}
-	.column {
-		@include flex(1 0 200px);		
-		padding: 0 15px;
-	}
-	.column-2 {		
-		@include flex-grow(2);
-	}

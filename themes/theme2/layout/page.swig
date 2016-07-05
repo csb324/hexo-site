@@ -8,5 +8,4 @@
 
 	  {% include 'includes/pagination.swig' %}
 	</div>
-
 {% endblock %}

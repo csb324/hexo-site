@@ -1,0 +1,27 @@
+// molecules/_post-preview.scss
+.recent-projects {
+	background-color: $darkergray;
+}
+.about-image {
+	display: none;
+}
+// molecules/_hero.scss
+.hero {
+	min-height: 160px;
+	background-color: $darkgray;
+}
+.hero--large, .section {
+	min-height: 40vh;
+}
+
+
+.nav {
+	min-height: 36px;
+	background-color: $darkergray;
+	font-size: 0px;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
