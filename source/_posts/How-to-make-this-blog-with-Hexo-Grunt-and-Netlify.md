@@ -7,6 +7,7 @@ tags:
 	- blog
 ---
 
+
 ## So a couple weeks ago... 
 
 I went to [Smashing Conference][smashconf] in New York, and I heard a great [talk] by this guy named [Phil Hawksworth][phil] about static sites. I was sold pretty immediately, probably because I'm impressionable and conferences are exciting. But also because it sounded like a good idea.

@@ -5,13 +5,8 @@
 	{% include 'components/hero.swig' with {title: config.title, subtitle: config.subtitle, large: true} %}
 {% endblock %}
 
-
-
-
 {% block body %}
-
   {% include 'includes/recent-projects.swig' %}	
-
   {% include 'includes/blog-posts.swig' %}
-
 {% endblock %}
+

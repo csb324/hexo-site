@@ -13,7 +13,7 @@ favicon: /favicon.ico
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/theme.css
+- /css/theme.min.css
 - https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
 
 # scripts loaded in the end of the body

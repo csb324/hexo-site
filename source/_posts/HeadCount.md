@@ -6,5 +6,6 @@ icon: check-square-o
 headline: A WordPress site built at Veracity Media
 ---
 
+
 <div class="desktop-image"><img src="/images/headcount.gif" alt="HeadCount"></div>
 

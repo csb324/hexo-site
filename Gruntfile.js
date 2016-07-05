@@ -1,4 +1,3 @@
-
 module.exports = function(grunt) {
 
   grunt.initConfig({
@@ -11,7 +10,7 @@ module.exports = function(grunt) {
       },
       styles: {
         files: ['themes/**/*.scss'],
-        tasks: ['sass']
+        tasks: ['styles']
       },
       content: {
         files: ['source/**/*.md'],
@@ -22,11 +21,23 @@ module.exports = function(grunt) {
     sass: {
       theme: {
         files: {
-          "themes/theme2/source/css/theme.css":"themes/theme2/source/css/theme2.scss"
+          "themes/theme2/source/css/theme.css":"themes/theme2/source/css/theme2.scss",
+          "themes/theme2/source/css/critical.css":"themes/theme2/source/css/critical.scss"
         }
       }
     },
 
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: "themes/theme2/source/css",
+          dest: "themes/theme2/source/css",
+          src: ['*.css', '!*.min.css'],
+          ext: '.min.css'
+        }]
+      }
+    },
 
     hexo: {
       clean: {
@@ -41,11 +52,14 @@ module.exports = function(grunt) {
           cliCmd: 'generate'
         }
       },
-    },
+    }
+
   });
 
   require('jit-grunt')(grunt);
   
-  grunt.registerTask('default', ['hexo', 'watch']);
+  grunt.registerTask('styles', ['sass', 'cssmin']);
+
+  grunt.registerTask('default', ['styles','hexo', 'watch']);
 
 };
