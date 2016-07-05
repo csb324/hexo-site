@@ -380,6 +380,38 @@ img {
 .clearfix {
   clear: both; }
 
+h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: normal;
+  text-transform: lowercase; }
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.414; }
+
+p {
+  margin-bottom: 1.414em; }
+
+h1, h2, h3, h4 {
+  margin: 1.2em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.414; }
+
+h1 {
+  margin-top: 0;
+  font-size: 3.99758em; }
+
+h2 {
+  font-size: 2.82715em; }
+
+h3 {
+  font-size: 1.9994em; }
+
+h4 {
+  font-size: 1.414em; }
+
 .page {
   display: -webkit-box;
   display: -webkit-flex;
@@ -435,62 +467,144 @@ img {
   -ms-flex-positive: 2;
   flex-grow: 2; }
 
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.414; }
+.section {
+  padding: 40px 0; }
 
-p {
-  margin-bottom: 0em;
-  font-size: 0px; }
-
-time {
-  font-size: 0px; }
-
-h1, h2, h3, h4 {
-  margin: 1.2em 0 0.5em;
-  font-weight: inherit;
-  line-height: 1.414; }
-
-h1 {
-  font-family: Georgia, serif;
-  font-weight: normal;
-  text-transform: lowercase; }
-
-h1 {
+.section__headline {
+  font-family: "Fira Mono", monospace;
   margin-top: 0;
-  font-size: 0em; }
-
-h2 {
-  font-size: 0em; }
-
-h3 {
-  font-size: 0em; }
-
-h4 {
-  font-size: 0em; }
-
-.recent-projects {
-  background-color: #323848; }
-
-.about-image {
-  display: none; }
-
-.hero {
-  min-height: 160px;
-  background-color: #383F51; }
-
-.hero--large, .section {
-  min-height: 40vh; }
+  text-transform: lowercase;
+  border-bottom: 2px solid transparent; }
 
 .nav {
-  min-height: 36px;
   background-color: #323848;
-  font-size: 0px; }
+  padding: 5px 5px 0;
+  font-family: "Fira Mono", monospace;
+  text-transform: lowercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto; }
+.nav__items {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right; }
+
+.nav__item {
+  display: inline-block; }
+
+.nav__link, .nav__title {
+  padding: 4px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  font-weight: 400; }
+
+.nav__link {
+  color: #FFBCDD; }
+
+.nav__title {
+  color: #BBFF8B; }
+
+.nav__link--active {
+  color: #fff;
+  border-bottom: 2px solid #fff; }
+
+.hero {
+  text-align: center;
+  color: #fff;
+  padding: 40px 15px;
+  background-color: #383F51;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+
+.hero--large {
+  height: 40vh;
+  min-height: 12em; }
+
+.hero--large .hero__title {
+  color: #BBFF8B; }
+
+.hero__title, .hero__subtitle {
+  margin: 0; }
+
+.hero__subtitle {
+  color: #BBFF8B;
+  font-size: 1.414em;
+  font-family: "Fira Mono", monospace;
+  text-transform: lowercase; }
+  .hero--large .hero__subtitle {
+    color: #fff; }
+
+.post-preview {
+  margin-bottom: 1em;
+  border-radius: 2px; }
+
+.post-preview__title {
+  font-family: "Playfair Display", Georgia, serif;
+  text-transform: lowercase; }
+
+.post-preview__subtitle {
+  font-family: "Fira Mono", monospace; }
+
+.post-preview__title, .post-preview__subtitle {
+  margin: 0; }
+
+.post-preview__date {
+  font-family: "Fira Mono", monospace;
+  float: right;
+  margin-top: 5px;
+  color: #39558C; }
+
+.recent-projects {
+  color: #fff;
+  background-color: #323848; }
+  .recent-projects .section__headline {
+    color: #FFBCDD;
+    border-color: #FFBCDD; }
+  .recent-projects .read-more__link {
+    color: #FFBCDD;
+    border-color: #FFBCDD; }
+    .recent-projects .read-more__link:hover {
+      background-color: #FFBCDD;
+      color: #323848; }
+  .recent-projects .post-preview__title, .recent-projects .post-preview__subtitle, .recent-projects .post-preview__link {
+    color: #fff; }
+  .recent-projects .post-preview__link:hover {
+    color: #DDDBF1; }
+  .recent-projects .post-preview__date {
+    color: #DDDBF1; }
+
+.about-image {
+  max-width: 80%;
+  margin: 0 auto;
+  display: block; }
 
 /*# sourceMappingURL=critical.css.map */

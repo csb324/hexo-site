@@ -1,10 +1,10 @@
+@import "https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans:400,400i,600,600i|Playfair+Display";
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import "https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans:400,400i,600,600i|Playfair+Display";
 html {
   font-family: sans-serif;
   /* 1 */
@@ -381,6 +381,38 @@ img {
 .clearfix {
   clear: both; }
 
+h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: normal;
+  text-transform: lowercase; }
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.414; }
+
+p {
+  margin-bottom: 1.414em; }
+
+h1, h2, h3, h4 {
+  margin: 1.2em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.414; }
+
+h1 {
+  margin-top: 0;
+  font-size: 3.99758em; }
+
+h2 {
+  font-size: 2.82715em; }
+
+h3 {
+  font-size: 1.9994em; }
+
+h4 {
+  font-size: 1.414em; }
+
 .page {
   display: -webkit-box;
   display: -webkit-flex;
@@ -436,41 +468,14 @@ img {
   -ms-flex-positive: 2;
   flex-grow: 2; }
 
-body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.414; }
+.section {
+  padding: 40px 0; }
 
-p {
-  margin-bottom: 1.414em;
-  font-size: 1em; }
-
-time {
-  font-size: 1em; }
-
-h1, h2, h3, h4 {
-  margin: 1.2em 0 0.5em;
-  font-weight: inherit;
-  line-height: 1.414; }
-
-h1 {
-  font-family: "Playfair Display", Georgia, serif;
-  font-weight: normal;
-  text-transform: lowercase; }
-
-h1 {
+.section__headline {
+  font-family: "Fira Mono", monospace;
   margin-top: 0;
-  font-size: 3.99758em; }
-
-h2 {
-  font-size: 2.82715em; }
-
-h3 {
-  font-size: 1.9994em; }
-
-h4 {
-  font-size: 1.414em; }
+  text-transform: lowercase;
+  border-bottom: 2px solid transparent; }
 
 a {
   color: #39558C;
@@ -531,33 +536,11 @@ a {
     border-width: 0 60px 6px;
     border-radius: 60px; }
 
-.recent-projects {
-  background-color: #323848; }
-
-.about-image {
-  display: none; }
-
-.hero {
-  min-height: 160px;
-  background-color: #383F51; }
-
-.hero--large, .section {
-  min-height: 40vh; }
-
 .nav {
-  min-height: 36px;
   background-color: #323848;
-  font-size: 0px; }
-
-.container {
-  max-width: 900px;
-  margin: 0 auto; }
-
-.nav {
   padding: 5px 5px 0;
   font-family: "Fira Mono", monospace;
   text-transform: lowercase;
-  font-size: 1em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -604,6 +587,7 @@ a {
   text-align: center;
   color: #fff;
   padding: 40px 15px;
+  background-color: #383F51;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -639,38 +623,6 @@ a {
   .hero--large .hero__subtitle {
     color: #fff; }
 
-.status-bar {
-  background-color: #323848;
-  color: #DDDBF1;
-  padding: 5px 0;
-  font-family: "Fira Mono", monospace; }
-
-.section {
-  padding: 40px 0; }
-
-.section__headline {
-  font-family: "Fira Mono", monospace;
-  margin-top: 0;
-  text-transform: lowercase;
-  border-bottom: 2px solid transparent; }
-
-.recent-projects {
-  color: #fff; }
-  .recent-projects .section__headline {
-    color: #FFBCDD;
-    border-color: #FFBCDD; }
-  .recent-projects .read-more__link {
-    color: #FFBCDD;
-    border-color: #FFBCDD; }
-    .recent-projects .read-more__link:hover {
-      background-color: #FFBCDD;
-      color: #323848; }
-
-.about-image {
-  max-width: 80%;
-  margin: 0 auto;
-  display: block; }
-
 .post-preview {
   margin-bottom: 1em;
   border-radius: 2px; }
@@ -691,11 +643,34 @@ a {
   margin-top: 5px;
   color: #39558C; }
 
-.recent-projects .post-preview__title, .recent-projects .post-preview__subtitle, .recent-projects .post-preview__link {
-  color: #fff; }
-.recent-projects .post-preview__link:hover {
-  color: #DDDBF1; }
-.recent-projects .post-preview__date {
-  color: #DDDBF1; }
+.status-bar {
+  background-color: #323848;
+  color: #DDDBF1;
+  padding: 5px 0;
+  font-family: "Fira Mono", monospace; }
+
+.recent-projects {
+  color: #fff;
+  background-color: #323848; }
+  .recent-projects .section__headline {
+    color: #FFBCDD;
+    border-color: #FFBCDD; }
+  .recent-projects .read-more__link {
+    color: #FFBCDD;
+    border-color: #FFBCDD; }
+    .recent-projects .read-more__link:hover {
+      background-color: #FFBCDD;
+      color: #323848; }
+  .recent-projects .post-preview__title, .recent-projects .post-preview__subtitle, .recent-projects .post-preview__link {
+    color: #fff; }
+  .recent-projects .post-preview__link:hover {
+    color: #DDDBF1; }
+  .recent-projects .post-preview__date {
+    color: #DDDBF1; }
+
+.about-image {
+  max-width: 80%;
+  margin: 0 auto;
+  display: block; }
 
 /*# sourceMappingURL=theme.css.map */

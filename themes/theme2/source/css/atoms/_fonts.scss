@@ -1,0 +1,10 @@
+$bodyFont: 'Open Sans', Helvetica, Arial, sans-serif;
+$monoFont: 'Fira Mono', monospace;
+$headerFont: 'Playfair Display', Georgia, serif;
+
+
+%headerFont {
+	font-family: $headerFont;
+	font-weight: normal;
+	text-transform: lowercase;
+}

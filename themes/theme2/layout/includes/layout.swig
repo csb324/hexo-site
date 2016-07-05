@@ -25,7 +25,6 @@
   <script>
     {{ site.loadCSS }}
   </script>
-
   <style>
     {{ site.critical }}  
   </style>
@@ -33,7 +32,6 @@
   {% if theme.stylesheets !== undefined && theme.stylesheets.length > 0 %}
     {# stylesheet list from config.yml #}
     {% for url in theme.stylesheets %}
-      {# <link rel="preload" href="{{ url }}" as="style" onload="this.rel='stylesheet'"> #}
       <script>
         loadCSS("{{url}}");
       </script>

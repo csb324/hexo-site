@@ -1,0 +1,36 @@
+.recent-projects {
+	color: #fff;
+	background-color: $darkergray;
+	
+	.section__headline {
+		color: $pink;
+		border-color: $pink;
+	}
+
+	.read-more__link {
+		color: $pink;
+		border-color: $pink;
+		&:hover {
+			background-color: $pink;
+			color: $darkergray;
+		}
+	}
+
+
+	// re: post-previews
+	.post-preview__title, .post-preview__subtitle, .post-preview__link {
+		color: #fff;
+	}
+	.post-preview__link:hover {
+		color: $purple;
+	}
+	.post-preview__date {
+		color: $purple;
+	}
+}
+
+.about-image {
+	max-width: 80%;
+	margin: 0 auto;
+	display: block;
+}

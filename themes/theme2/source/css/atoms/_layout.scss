@@ -25,3 +25,13 @@
 	.column-2 {		
 		@include flex-grow(2);
 	}
+
+.section {
+	padding: 40px 0;
+}
+	.section__headline {
+		font-family: $monoFont;
+		margin-top: 0;
+		text-transform: lowercase;
+		border-bottom: 2px solid transparent;
+	}
