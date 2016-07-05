@@ -16,8 +16,10 @@ stylesheets:
 - /css/theme.min.css
 - https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
 
+# script loaded in the head
+headScripts: 
+- /js/loadCSS.js
+
 # scripts loaded in the end of the body
 scripts:
-- /js/loadCSS.js
-- /js/cssrelpreload.js
-- /js/theme2.js
+  
