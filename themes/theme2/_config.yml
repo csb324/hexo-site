@@ -18,6 +18,3 @@ stylesheets:
 
 # scripts loaded in the end of the body
 scripts:
-- /js/loadCSS.js
-- /js/cssrelpreload.js
-- /js/theme2.js

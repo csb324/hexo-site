@@ -1,43 +1,3 @@
-.section {
-	padding: 40px 0;
-}
-	.section__headline {
-		font-family: $monoFont;
-		margin-top: 0;
-		text-transform: lowercase;
-		border-bottom: 2px solid transparent;
-	}
-
-
-.recent-projects {
-	color: #fff;
-
-	.section__headline {
-		color: $pink;
-		border-color: $pink;
-	}
-
-
-	.read-more__link {
-		color: $pink;
-		border-color: $pink;
-		&:hover {
-			background-color: $pink;
-			color: $darkergray;
-		}
-	}
-}
-
-
-
-
-
-.about-image {
-	max-width: 80%;
-	margin: 0 auto;
-	display: block;
-}
-
 .post-preview {
 	margin-bottom: 1em;
 	border-radius: 2px;
@@ -63,17 +23,6 @@
 		color: $darkblue;
 	}
 
-	.recent-projects {
-		.post-preview__title, .post-preview__subtitle, .post-preview__link {
-			color: #fff;
-		}
-		.post-preview__link:hover {
-			color: $purple;
-		}
-		.post-preview__date {
-			color: $purple;
-		}
-	}
 
 
 

@@ -1,20 +1,23 @@
+@import 'https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans:400,400i,600,600i|Playfair+Display';
+
 @import "util/normalize";
 @import "util/reset";
-
 @import "util/mixins";
 
-@import "atoms/layout";
-
 @import "atoms/colors";
+@import "atoms/type_sizes";
+@import "atoms/fonts";
 @import "atoms/type";
+
+@import "atoms/layout";
 
 @import "atoms/links";
 @import "atoms/images";
 
-@import "util/above_fold_basics";
-
 @import "molecules/nav";
 @import "molecules/hero";
 
-@import "molecules/status-bar";
 @import "molecules/post-preview";
+@import "molecules/status-bar";
+
+@import "organisms/recent_projects";

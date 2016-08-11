@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     watch: {
       options: { livereload: true },
       theme: {
-        files: ['**/*.swig'],
+        files: ['themes/**/*.swig', 'themes/**/_config.yml'],
         tasks: ['hexo']
       },
       styles: {
