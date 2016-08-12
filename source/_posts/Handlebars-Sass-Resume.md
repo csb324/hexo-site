@@ -7,7 +7,13 @@ headline: Why can't we just CSS our resumes again?
 ---
 ### What does this do?
 
-Making a resume sucks. If you have repeating elements, and you want to position them _just right_, using Microsoft Word is a really good way to give yourself stress nightmares. You know what I like using to style things? CSS.
+Making a resume sucks. 
+
+Let's think about it this way: A resume is a list of repeating elements (or, perhaps, a few different kinds of lists). Each element is a job you've had once, and each job probably has a bunch of things attached to it that you want to style differently: dates you worked there, title, responsibilities, etc. 
+
+A resume is also a piece of paper that you want to use to represent yourself. You want everything lined up and spaced in the ideal way to make it easy to read, but also contain as much killer awesome information as possible. 
+
+Life tip: if you have repeating elements, and you want to position them _just right_, using Microsoft Word is a really good way to give yourself stress nightmares. You know what I like using to style things? CSS.
 
 Oh, and you know how I like to store objects? JavaScript.
 
