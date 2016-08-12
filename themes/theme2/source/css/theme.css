@@ -381,7 +381,7 @@ img {
 .clearfix {
   clear: both; }
 
-h1 {
+h1, .get-in-touch__list {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: normal;
   text-transform: lowercase; }
@@ -673,7 +673,57 @@ a {
   margin: 0 auto;
   display: block; }
 
+.blog-posts {
+  color: #383F51; }
+  .blog-posts .section__headline {
+    border-color: #383F51; }
+  .blog-posts .read-more__link:hover {
+    background-color: #39558C;
+    color: #fff; }
+
+.well {
+  background-color: #DDDBF1;
+  padding: 15px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  border-radius: 2px;
+  overflow: hidden; }
+
+.well__headline {
+  margin: -15px -15px 0;
+  color: #fff;
+  padding-top: 5px;
+  background-color: #c1bee6;
+  text-align: center;
+  border-color: transparent;
+  border-width: 0; }
+
 .get-in-touch {
-  background-color: #ffd6ea; }
+  background-color: #ffd6ea;
+  text-align: center; }
+  .get-in-touch .section__headline {
+    color: #fff;
+    font-size: 3.99758em;
+    border-color: #fff; }
+
+.get-in-touch__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: inline-block; }
+
+.get-in-touch__item {
+  text-align: left;
+  font-size: 1.9994em;
+  margin-bottom: 0.5em; }
+
+.get-in-touch__link {
+  color: #383F51;
+  display: inline-block;
+  padding: 0 0.2em;
+  transition: 0.1s; }
+  .get-in-touch__link:hover {
+    color: #39558C;
+    background-color: #fff; }
 
 /*# sourceMappingURL=theme.css.map */

@@ -1,3 +1,35 @@
 .get-in-touch {
 	background-color: lighten($pink, 5%);
+	text-align: center;
+
+	.section__headline {
+		color: #fff;
+		font-size: $font-size-h1;
+		border-color: #fff;
+	}
+
+}
+.get-in-touch__list {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	display: inline-block;
+
+	@extend %headerFont;
+}
+.get-in-touch__item {
+	text-align: left;
+	font-size: $font-size-h3;
+	margin-bottom: 0.5em;
+}
+
+.get-in-touch__link {
+	color: $darkgray;
+	display: inline-block;
+	padding: 0 0.2em;
+	transition: 0.1s;
+	&:hover {
+		color: $darkblue;
+		background-color: #fff;
+	}
 }

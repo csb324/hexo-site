@@ -1,0 +1,30 @@
+.blog-posts {
+	color: $darkgray;
+	.section__headline {
+		border-color: $darkgray;
+	}
+
+	.read-more__link:hover {
+		background-color: $darkblue;
+		color: #fff;
+	}
+}
+
+.well {
+	background-color: $purple;
+	padding: 15px;
+	margin-bottom: 15px;
+	
+	line-height: 1.5;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.well__headline {
+	margin: -15px -15px 0;
+	color: #fff;
+	padding-top: 5px;
+	background-color: darken($purple, 8%);
+	text-align: center;
+	border-color: transparent;
+	border-width: 0;
+}
