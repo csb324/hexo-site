@@ -1,0 +1,86 @@
+/*
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+*/
+
+.highlight {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+
+  background: $darkgray;
+  color: $purple;
+
+  .tag,
+  .subst {
+    color: $purple;
+
+  }
+
+  .strong,
+  .emphasis {
+    color: #a8a8a2;
+  }
+
+  .bullet,
+  .quote,
+  .number,
+  .regexp,
+  .literal,
+  .link {
+    color: #ae81ff;
+  }
+
+  .code,
+  .title,
+  .section,
+  .selector-class {
+    color: #fff;
+  }
+
+  .strong {
+    font-weight: bold;
+  }
+
+  .emphasis {
+    font-style: italic;
+  }
+
+  .keyword,
+  .selector-tag,
+  .name,
+  .attr {
+    color: $lightgreen;
+  }
+
+  .symbol,
+  .attribute {
+    color: #66d9ef;
+  }
+
+  .params,
+  .class .title {
+    color: #f8f8f2;
+  }
+
+  .string,
+  .type,
+  .built_in,
+  .builtin-name,
+  .selector-id,
+  .selector-attr,
+  .selector-pseudo,
+  .addition,
+  .variable,
+  .template-variable {
+    color: #e6db74;
+  }
+
+  .comment,
+  .deletion,
+  .meta {
+    color: lighten( $darkgray, 35% );
+  }
+
+}
+

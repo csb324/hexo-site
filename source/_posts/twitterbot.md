@@ -3,6 +3,7 @@ title: Twitter Bots
 date: 2016-06-30 22:08:13
 headline: Node.js and the Magic of the Internet Hivemind
 tags: projects
+icon: twitter
 ---
 
 * [Real Men]

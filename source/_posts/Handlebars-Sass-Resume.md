@@ -1,6 +1,6 @@
 ---
 title: A Resume-maker in the Browser
-tags: projects
+tags: blog
 date: 2016-08-10 13:36:49
 icon: file-text-o
 headline: Why can't we just CSS our resumes again?

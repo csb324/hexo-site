@@ -381,7 +381,7 @@ img {
 .clearfix {
   clear: both; }
 
-h1, .get-in-touch__list {
+h1 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: normal;
   text-transform: lowercase; }
@@ -412,6 +412,65 @@ h3 {
 
 h4 {
   font-size: 1.414em; }
+
+/*
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+*/
+.highlight {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background: #383F51;
+  color: #DDDBF1; }
+  .highlight .tag,
+  .highlight .subst {
+    color: #DDDBF1; }
+  .highlight .strong,
+  .highlight .emphasis {
+    color: #a8a8a2; }
+  .highlight .bullet,
+  .highlight .quote,
+  .highlight .number,
+  .highlight .regexp,
+  .highlight .literal,
+  .highlight .link {
+    color: #ae81ff; }
+  .highlight .code,
+  .highlight .title,
+  .highlight .section,
+  .highlight .selector-class {
+    color: #fff; }
+  .highlight .strong {
+    font-weight: bold; }
+  .highlight .emphasis {
+    font-style: italic; }
+  .highlight .keyword,
+  .highlight .selector-tag,
+  .highlight .name,
+  .highlight .attr {
+    color: #BBFF8B; }
+  .highlight .symbol,
+  .highlight .attribute {
+    color: #66d9ef; }
+  .highlight .params,
+  .highlight .class .title {
+    color: #f8f8f2; }
+  .highlight .string,
+  .highlight .type,
+  .highlight .built_in,
+  .highlight .builtin-name,
+  .highlight .selector-id,
+  .highlight .selector-attr,
+  .highlight .selector-pseudo,
+  .highlight .addition,
+  .highlight .variable,
+  .highlight .template-variable {
+    color: #e6db74; }
+  .highlight .comment,
+  .highlight .deletion,
+  .highlight .meta {
+    color: #8c96af; }
 
 .page {
   display: -webkit-box;
@@ -643,11 +702,15 @@ a {
   margin-top: 5px;
   color: #39558C; }
 
-.status-bar {
+.status-bar, .footer {
   background-color: #323848;
   color: #DDDBF1;
   padding: 5px 0;
   font-family: "Fira Mono", monospace; }
+
+.footer {
+  padding: 10px 0;
+  margin-top: 1em; }
 
 .recent-projects {
   color: #fff;
@@ -699,18 +762,20 @@ a {
   border-width: 0; }
 
 .get-in-touch {
-  background-color: #ffd6ea;
-  text-align: center; }
+  background-color: #383F51;
+  text-align: center;
+  margin-bottom: -1em; }
   .get-in-touch .section__headline {
-    color: #fff;
+    color: #FFBCDD;
     font-size: 3.99758em;
-    border-color: #fff; }
+    border-color: #FFBCDD; }
 
 .get-in-touch__list {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  display: inline-block; }
+  display: inline-block;
+  font-family: "Fira Mono", monospace; }
 
 .get-in-touch__item {
   text-align: left;
@@ -718,12 +783,12 @@ a {
   margin-bottom: 0.5em; }
 
 .get-in-touch__link {
-  color: #383F51;
+  color: #fff;
   display: inline-block;
   padding: 0 0.2em;
   transition: 0.1s; }
   .get-in-touch__link:hover {
-    color: #39558C;
-    background-color: #fff; }
+    color: #fff;
+    background-color: rgba(221, 219, 241, 0.2); }
 
 /*# sourceMappingURL=theme.css.map */

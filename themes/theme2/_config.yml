@@ -15,6 +15,7 @@ favicon: /favicon.ico
 stylesheets:
 - /css/theme.min.css
 - https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
+- https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css
 
 # scripts loaded in the end of the body
 scripts:

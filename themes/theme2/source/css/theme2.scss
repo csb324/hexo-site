@@ -9,6 +9,11 @@
 @import "atoms/fonts";
 @import "atoms/type";
 
+
+@import "util/highlight";
+
+
+
 @import "atoms/layout";
 
 @import "atoms/links";
@@ -19,6 +24,8 @@
 
 @import "molecules/post-preview";
 @import "molecules/status-bar";
+@import "molecules/footer";
+
 
 @import "organisms/recent_projects";
 @import "organisms/blog-posts";

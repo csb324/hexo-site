@@ -57,7 +57,7 @@
 
   <div class="footer page__footer">
     <div class="container">
-      <p>copyright 2016.</p>    
+      copyright 2016.  
     </div>
   </div>
 
