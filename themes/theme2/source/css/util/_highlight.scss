@@ -5,16 +5,27 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .highlight {
   display: block;
   overflow-x: auto;
-  padding: 0.5em 1em;
+  padding: 0.5em 1.5em;
   margin: 1em 0;
+
+  border-radius: 2px;
+
 
   background: $darkgray;
   color: $purple;
 
+  .line {
+    margin-bottom: 1em;
+  }
+
+  &, pre {
+    font-family: $monoFont;    
+  }
+
+
   .tag,
   .subst {
     color: $purple;
-
   }
 
   .strong,
