@@ -5,13 +5,12 @@
 @import "util/mixins";
 
 @import "atoms/colors";
-@import "atoms/type_sizes";
+@import "atoms/type-sizes";
 @import "atoms/fonts";
 @import "atoms/type";
 
 
 @import "util/highlight";
-
 
 
 @import "atoms/layout";
@@ -27,6 +26,7 @@
 @import "molecules/footer";
 
 
-@import "organisms/recent_projects";
+@import "organisms/post";
+@import "organisms/recent-projects";
 @import "organisms/blog-posts";
 @import "organisms/get-in-touch";

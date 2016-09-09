@@ -717,6 +717,11 @@ a {
   padding: 10px 0;
   margin-top: 1em; }
 
+.in-post-media {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
 .recent-projects {
   color: #fff;
   background-color: #323848; }

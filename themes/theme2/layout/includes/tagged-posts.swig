@@ -1,9 +1,9 @@
-{% for postItem in site.posts.toArray() %}
+{% for postItem in page.posts %}
 
 	{% set toDisplay = false %}
 
-	{% if postItem.tags.toArray() %}
-		{% set postTags = postItem.tags.toArray() %}
+	{% if postItem.tags %}
+		{% set postTags = postItem.tags %}
 		{% for tag in postTags %}
 			{% if tag.name == targetTag %}
 				{% set toDisplay = true %}

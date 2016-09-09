@@ -1,14 +1,11 @@
-
-
 @import "util/normalize";
 @import "util/reset";
 @import "util/mixins";
 
 @import "atoms/colors";
-@import "atoms/type_sizes";
+@import "atoms/type-sizes";
 @import "atoms/fonts";
 @import "atoms/type";
-
 @import "atoms/layout";
 
 
@@ -16,8 +13,6 @@
 
 @import "molecules/nav";
 @import "molecules/hero";
-
 @import "molecules/post-preview";
 
-
-@import "organisms/recent_projects";
+@import "organisms/recent-projects";
