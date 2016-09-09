@@ -37,16 +37,6 @@
     {% endif %}
   </script>
 
-  
-  <noscript>
-  {% if theme.stylesheets !== undefined && theme.stylesheets.length > 0 %}
-    {# stylesheet list from config.yml #}
-    {% for url in theme.stylesheets %}
-      <link rel="stylesheet" href="{{ url }}">
-    {% endfor %}
-  {% endif %}
-  </noscript>
-
 </head>
 <body>
 
@@ -72,6 +62,18 @@
   </div>
 
 </div>
+
+
+
+<noscript>
+{% if theme.stylesheets !== undefined && theme.stylesheets.length > 0 %}
+  {# stylesheet list from config.yml #}
+  {% for url in theme.stylesheets %}
+    <link rel="stylesheet" href="{{ url }}">
+  {% endfor %}
+{% endif %}
+</noscript>
+
 
 {% if theme.scripts !== undefined && theme.scripts.length > 0 %}
   {# scripts list from config.yml #}
