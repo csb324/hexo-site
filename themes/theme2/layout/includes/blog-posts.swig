@@ -2,14 +2,7 @@
 	<div class="container columns">
 
 		<div class="column column-1">
-			<div class="well">
-				<h2 class="section__headline well__headline">
-					hello!
-				</h2>
-				<div class="well__content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias labore molestiae animi sapiente, veritatis delectus doloremque. Ab mollitia, fuga et a dolorum suscipit quaerat quae facere tempore sit exercitationem sequi!</p>
-				</div>
-			</div>
+			{% include "well.swig" %}
 		</div>
 
 		<div class="column column-2">
@@ -19,4 +12,3 @@
 
   </div>
 </div>
-

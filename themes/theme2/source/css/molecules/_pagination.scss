@@ -5,14 +5,8 @@
 }
 
 .pagination__link {
-	display: inline-block;
-	padding: 0.5em 1em;
-	border-radius: 2px;
-	background-color: lighten($purple, 5%);
-	transition: 0.2s;
-	&:hover {
-		background-color: lighten($purple, 0%);
-	}
+	@extend %btn-subtle;
+
 }
 
 .pagination__link--next {

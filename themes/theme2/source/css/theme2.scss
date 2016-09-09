@@ -9,12 +9,9 @@
 @import "atoms/fonts";
 @import "atoms/type";
 
-
 @import "util/highlight";
 
-
 @import "atoms/layout";
-
 @import "atoms/links";
 @import "atoms/images";
 
@@ -28,6 +25,7 @@
 
 
 @import "organisms/post";
+@import "organisms/archive";
 @import "organisms/recent-projects";
 @import "organisms/blog-posts";
 @import "organisms/get-in-touch";

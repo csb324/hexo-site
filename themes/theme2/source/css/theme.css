@@ -546,14 +546,26 @@ a {
   color: #39558C;
   font-weight: 600; }
 
-.read-more__link {
+.read-more__link, .pagination__link, .archive__-link {
   font-family: "Fira Mono", monospace;
-  display: inline-block;
+  display: inline-block; }
+
+.read-more__link {
   padding: 5px 10px;
   border: 2px solid transparent;
   border-radius: 1px;
   text-transform: lowercase;
   border-color: #39558C; }
+
+.pagination__link, .archive__-link {
+  padding: 0.5em 1em;
+  border-radius: 2px;
+  background-color: #eeedf8;
+  color: #333;
+  transition: 0.2s;
+  margin-right: 1em; }
+  .pagination__link:hover, .archive__-link:hover {
+    background-color: #dddbf1; }
 
 .polaroid-image {
   border: 10px solid #fff;
@@ -723,25 +735,20 @@ a {
   font-family: "Fira Mono", monospace;
   padding-bottom: 2em; }
 
-.pagination__link {
-  display: inline-block;
-  padding: 0.5em 1em;
-  border-radius: 2px;
-  background-color: #eeedf8;
-  transition: 0.2s; }
-  .pagination__link:hover {
-    background-color: #dddbf1; }
-
 .pagination__link--next {
   float: right; }
 
-.post {
+.post, .tag, .archive {
   margin: 2em 0; }
 
 .in-post-media {
   display: block;
   margin: 0 auto;
   text-align: center; }
+
+.archive__heading {
+  font-family: "Fira Mono", monospace;
+  margin: 0; }
 
 .recent-projects {
   color: #fff;

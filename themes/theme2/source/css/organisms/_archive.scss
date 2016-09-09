@@ -1,0 +1,7 @@
+.archive__heading {
+	font-family: $monoFont;
+	margin: 0;
+}
+.archive__-link {
+	@extend %btn-subtle;
+}

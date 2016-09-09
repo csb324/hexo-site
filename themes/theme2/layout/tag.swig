@@ -9,7 +9,7 @@
 
 {% block body %}
 	<div class="container">		
-	  <div id="tag">
+	  <div id="tag" class="tag">
 	    {% for postItem in page.posts.toArray() %}
 	      <div class="tag-item">
 	        {% include 'components/post-preview.swig' with {item: postItem} %}

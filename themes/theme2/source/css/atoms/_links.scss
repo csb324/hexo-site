@@ -3,10 +3,13 @@ a {
 	font-weight: 600;
 }
 
-
-.read-more__link {
+%btn {
 	font-family: $monoFont;
 	display: inline-block;
+}
+
+.read-more__link {
+	@extend %btn;
 	padding: 5px 10px;
 	border: 2px solid transparent;
 	border-radius: 1px;
@@ -14,3 +17,15 @@ a {
 	border-color: $darkblue;
 }
 
+%btn-subtle {
+	@extend %btn;
+	padding: 0.5em 1em;
+	border-radius: 2px;
+	background-color: lighten($purple, 5%);
+	color: #333;
+	transition: 0.2s;
+	margin-right: 1em;
+	&:hover {
+		background-color: lighten($purple, 0%);
+	}
+}
