@@ -22,22 +22,30 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
   <title>{{ pageTitle }}</title>
 
-  <script>
-    {{ site.loadCSS }}
-  </script>
   <style>
     {{ site.critical }}  
   </style>
+
+  <script>
+    {{ site.loadCSS }}
+
+    {% if theme.stylesheets !== undefined && theme.stylesheets.length > 0 %}
+      {# stylesheet list from config.yml #}
+        {% for url in theme.stylesheets %}
+          loadCSS("{{url}}");
+        {% endfor %}
+    {% endif %}
+  </script>
+
   
+  <noscript>
   {% if theme.stylesheets !== undefined && theme.stylesheets.length > 0 %}
     {# stylesheet list from config.yml #}
     {% for url in theme.stylesheets %}
-      <script>
-        loadCSS("{{url}}");
-      </script>
-      <noscript><link rel="stylesheet" href="{{ url }}"></noscript>
+      <link rel="stylesheet" href="{{ url }}">
     {% endfor %}
   {% endif %}
+  </noscript>
 
 </head>
 <body>
@@ -59,7 +67,7 @@
 
   <div class="footer page__footer">
     <div class="container">
-      copyright 2016.  
+      copyright 2016.
     </div>
   </div>
 
