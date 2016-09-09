@@ -15,20 +15,28 @@
 	}
 
 	.hero__title {
+		margin: 0;
 		.hero--large & {
 			color: $lightgreen;
 		}
 	}
 
-	.hero__title, .hero__subtitle {
-		margin: 0;
-	}
-
 	.hero__subtitle {
+
+		margin: 0 auto;
+		display: inline-block;
+
+		&.flash-on {
+			border-left: 2px solid transparent;
+			border-right: 2px solid $lightgreen;
+		}
+
 		color: $lightgreen;
 		font-size: $font-size-h4;
 		font-family: $monoFont;
 		text-transform: lowercase;
+		line-height: 1.2;
+		padding: 0 3px;
 
 		.hero--large & {
 			color: #fff;

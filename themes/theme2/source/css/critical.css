@@ -550,17 +550,23 @@ h4 {
   height: 40vh;
   min-height: 12em; }
 
-.hero--large .hero__title {
-  color: #BBFF8B; }
-
-.hero__title, .hero__subtitle {
+.hero__title {
   margin: 0; }
+  .hero--large .hero__title {
+    color: #BBFF8B; }
 
 .hero__subtitle {
+  margin: 0 auto;
+  display: inline-block;
   color: #BBFF8B;
   font-size: 1.414em;
   font-family: "Fira Mono", monospace;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  line-height: 1.2;
+  padding: 0 3px; }
+  .hero__subtitle.flash-on {
+    border-left: 2px solid transparent;
+    border-right: 2px solid #BBFF8B; }
   .hero--large .hero__subtitle {
     color: #fff; }
 
