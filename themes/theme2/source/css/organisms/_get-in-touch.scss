@@ -32,7 +32,8 @@
 .get-in-touch__link {
 	color: #fff;
 	display: inline-block;
-	padding: 0 0.2em;
+	border-radius: 2px;
+	padding: 0.1em 0.2em 0;
 	transition: 0.1s;
 	&:hover {
 		color: #fff;
