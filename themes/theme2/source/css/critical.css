@@ -576,7 +576,7 @@ h4 {
     color: #fff; }
 
 .post-preview {
-  margin-bottom: 1em;
+  margin-bottom: 2.82715em;
   border-radius: 2px; }
 
 .post-preview__title {
@@ -600,6 +600,9 @@ h4 {
     color: #645abf; }
 
 @media (min-width: 430px) {
+  .post-preview {
+    margin-bottom: 1.414em; }
+
   .post-preview__date {
     float: right; } }
 .recent-projects {

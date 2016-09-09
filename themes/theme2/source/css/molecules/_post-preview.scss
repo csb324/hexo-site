@@ -1,5 +1,5 @@
 .post-preview {
-	margin-bottom: 1em;
+	margin-bottom: $font-size-h2;
 	border-radius: 2px;
 }
 
@@ -32,6 +32,9 @@
 
 
 @media (min-width: 430px) {
+	.post-preview {
+		margin-bottom: $font-size-h4;
+	}
 	.post-preview__date {
 		float: right;
 	}

@@ -5,11 +5,13 @@
 	background-color: $darkgray;
 
 	text-align: center;
-	margin-bottom: -1em;
+	margin-bottom: -1.05rem;
 
 	.section__headline {
 		color: $pink;
 		font-size: $font-size-h1;
+		line-height: 1;
+		padding: 0.212em 0;
 		border-color: $pink;
 	}
 
@@ -38,5 +40,11 @@
 	&:hover {
 		color: #fff;
 		background-color: rgba( $purple, 0.2 );
+	}
+}
+
+@media (max-width: 430px) {
+	.get-in-touch {
+		font-size: 0.7rem;
 	}
 }
