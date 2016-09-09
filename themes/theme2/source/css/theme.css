@@ -724,7 +724,12 @@ a {
   font-family: "Fira Mono", monospace;
   float: right;
   margin-top: 5px;
+  color: #867fcd; }
+
+.post-preview__link {
   color: #39558C; }
+  .post-preview__link:hover {
+    color: #645abf; }
 
 .status-bar, .footer {
   background-color: #323848;

@@ -20,9 +20,15 @@
 		font-family: $monoFont;
 		float: right;
 		margin-top: 5px;
-		color: $darkblue;
+		color: darken($purple, 25%);
 	}
 
+	.post-preview__link {
+		color: $darkblue;
+		&:hover {
+			color: darken($purple, 35%);
+		}
+	}
 
 
 
