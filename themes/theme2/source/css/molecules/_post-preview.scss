@@ -18,7 +18,6 @@
 
 	.post-preview__date {
 		font-family: $monoFont;
-		float: right;
 		margin-top: 5px;
 		color: darken($purple, 25%);
 	}
@@ -32,3 +31,8 @@
 
 
 
+@media (min-width: 430px) {
+	.post-preview__date {
+		float: right;
+	}
+}

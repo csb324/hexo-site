@@ -19,7 +19,7 @@
 	@include flex-wrap(wrap);
 }
 	.column {
-		@include flex(1 0 200px);		
+		@include flex(1 0 320px);		
 		padding: 0 15px;
 	}
 	.column-2 {		

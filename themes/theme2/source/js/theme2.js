@@ -21,7 +21,7 @@ function animateSubtitle() {
 
 
 	function addLetter() {
-		subtitle.text(subtitle.text() + text[i]);
+		subtitle.text(subtitle.text().replace(String.fromCharCode(160), " ") + text[i]);
 		i += 1;
 		if (i == text.length) {
 			initFlashing();

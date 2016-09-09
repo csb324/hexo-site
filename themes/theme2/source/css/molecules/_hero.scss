@@ -10,14 +10,16 @@
 }
 
 	.hero--large {
-		height: 40vh;
-		min-height: 12em;
+		min-height: 40vh;
 	}
 
 	.hero__title {
 		margin: 0;
 		.hero--large & {
 			color: $lightgreen;
+			line-height: 1;
+			margin-top: 0.212em;
+			margin-bottom: 0.414em;
 		}
 	}
 
@@ -25,12 +27,16 @@
 
 		margin: 0 auto;
 		display: inline-block;
-
-		&.flash-on {
-			border-left: 2px solid transparent;
-			border-right: 2px solid $lightgreen;
+		&:after {
+			content: "|";
+			opacity: 0;
+			color: $lightgreen;
 		}
 
+		&.flash-on:after {
+			opacity: 1;
+		}
+		
 		color: $lightgreen;
 		font-size: $font-size-h4;
 		font-family: $monoFont;

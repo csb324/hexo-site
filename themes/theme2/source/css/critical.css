@@ -454,11 +454,11 @@ h4 {
 
 .column {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 200px;
+  -webkit-flex: 1 0 320px;
   -moz-box-flex: 1;
-  -moz-flex: 1 0 200px;
-  -ms-flex: 1 0 200px;
-  flex: 1 0 200px;
+  -moz-flex: 1 0 320px;
+  -ms-flex: 1 0 320px;
+  flex: 1 0 320px;
   padding: 0 15px; }
 
 .column-2 {
@@ -547,13 +547,15 @@ h4 {
   justify-content: center; }
 
 .hero--large {
-  height: 40vh;
-  min-height: 12em; }
+  min-height: 40vh; }
 
 .hero__title {
   margin: 0; }
   .hero--large .hero__title {
-    color: #BBFF8B; }
+    color: #BBFF8B;
+    line-height: 1;
+    margin-top: 0.212em;
+    margin-bottom: 0.414em; }
 
 .hero__subtitle {
   margin: 0 auto;
@@ -564,9 +566,12 @@ h4 {
   text-transform: lowercase;
   line-height: 1.2;
   padding: 0 3px; }
-  .hero__subtitle.flash-on {
-    border-left: 2px solid transparent;
-    border-right: 2px solid #BBFF8B; }
+  .hero__subtitle:after {
+    content: "|";
+    opacity: 0;
+    color: #BBFF8B; }
+  .hero__subtitle.flash-on:after {
+    opacity: 1; }
   .hero--large .hero__subtitle {
     color: #fff; }
 
@@ -586,7 +591,6 @@ h4 {
 
 .post-preview__date {
   font-family: "Fira Mono", monospace;
-  float: right;
   margin-top: 5px;
   color: #867fcd; }
 
@@ -595,6 +599,9 @@ h4 {
   .post-preview__link:hover {
     color: #645abf; }
 
+@media (min-width: 430px) {
+  .post-preview__date {
+    float: right; } }
 .recent-projects {
   color: #fff;
   background-color: #323848; }
