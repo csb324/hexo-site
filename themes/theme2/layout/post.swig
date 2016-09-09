@@ -10,4 +10,5 @@
 	  </article>
 	  {% include 'includes/pagination.swig' %}
   </div>
+
 {% endblock %}

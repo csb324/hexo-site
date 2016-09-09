@@ -47,9 +47,10 @@ But before I was living in this fantastic world, I was living in a very dark and
 
 ## Yo. Help.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">what I like about front end development is that I end up typing things like &quot;yo help&quot; in the command line</p>&mdash; clara b (@clarabellum) <a href="https://twitter.com/clarabellum/status/748682455608070144">July 1, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+<div class="in-post-media" style="max-width: 500px;">
+	<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">what I like about front end development is that I end up typing things like &quot;yo help&quot; in the command line</p>&mdash; clara b (@clarabellum) <a href="https://twitter.com/clarabellum/status/748682455608070144">July 1, 2016</a></blockquote>
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>	
+</div>
 
 Yeoman is awesome. Have I mentioned that? I'm really into the idea of generators, because I'm really not into the idea of reinventing the wheel every time I want to do something. 
 

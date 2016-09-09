@@ -55,6 +55,8 @@
   </div>
 
 
+  {% include "get-in-touch.swig" %}
+
   <div class="footer page__footer">
     <div class="container">
       copyright 2016.  

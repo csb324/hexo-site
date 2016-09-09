@@ -2,6 +2,7 @@
 title: Permission to Fail
 headline: Why I miss college
 date: 2016-08-31 08:43:54
+icon: times-circle
 tags:
 	- blog
 	- life

@@ -388,9 +388,10 @@ h1 {
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.414; }
+  line-height: 1.414;
+  color: #333; }
 
 p {
   margin-bottom: 1.414em; }
@@ -568,7 +569,7 @@ a {
   max-width: 550px;
   border-radius: 15px;
   box-shadow: 0 0 0 3px #ccc, 0 30px 0 3px #ccc;
-  display: block;
+  display: inline-block;
   margin: 20px auto 10%;
   position: relative; }
   .desktop-image img {
@@ -716,6 +717,26 @@ a {
 .footer {
   padding: 10px 0;
   margin-top: 1em; }
+
+.pagination {
+  display: block;
+  font-family: "Fira Mono", monospace;
+  padding-bottom: 2em; }
+
+.pagination__link {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 2px;
+  background-color: #eeedf8;
+  transition: 0.2s; }
+  .pagination__link:hover {
+    background-color: #dddbf1; }
+
+.pagination__link--next {
+  float: right; }
+
+.post {
+  margin: 2em 0; }
 
 .in-post-media {
   display: block;

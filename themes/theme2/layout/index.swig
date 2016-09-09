@@ -7,6 +7,5 @@
 
 {% block body %}
   {% include 'includes/recent-projects.swig' %}	
-  {% include 'includes/blog-posts.swig' %}
-  {% include 'includes/get-in-touch.swig' %}
+  {% include 'includes/blog-posts.swig' %}  
 {% endblock %}
