@@ -8,4 +8,19 @@
 	 margin: 0 auto;
 	 text-align: center;
 }
+.twitter-tweet {
+	margin-left: auto;
+	margin-right: auto;
+}
 
+.post {
+	line-height: 1.66;
+	p {
+		margin: 0 auto 1.414em;
+	}
+	p, ul, ol, h1, h2, h3, h4, h5, h6, figure {
+		max-width: 40rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
