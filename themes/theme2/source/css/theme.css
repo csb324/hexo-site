@@ -779,7 +779,7 @@ a {
 .post {
   line-height: 1.66; }
   .post p {
-    margin: 0 auto 1.414em; }
+    margin: 0.414em auto 1em; }
   .post p, .post ul, .post ol, .post h1, .post h2, .post h3, .post h4, .post h5, .post h6, .post figure {
     max-width: 40rem;
     margin-left: auto;

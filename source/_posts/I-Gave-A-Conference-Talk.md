@@ -8,6 +8,8 @@ icon: microphone
 
 That's right. Somebody gave me a microphone and a half an hour. Watch my talk here! 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-PbrV07_K9E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="in-post-media">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-PbrV07_K9E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 Once I'd shaken off my post-speech adrenaline, I had an awesome time talking to all of the other Monktoberfest attendees and speakers. Someone should really buy the whole [Monktoberfest](https://monktoberfest.com/) team a beer, because they bought us a *bunch* of beers and overall organized a great space to talk about the internet and the world.
